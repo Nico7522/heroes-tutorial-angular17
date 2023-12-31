@@ -1,0 +1,22 @@
+form {
+    width: 700px;
+    margin: auto;
+
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+input {
+    width: 300px;
+    padding: 0;
+}
+
+.alert-message {
+    width: 300px;
+    height: 25px;
+    background: red;
+}

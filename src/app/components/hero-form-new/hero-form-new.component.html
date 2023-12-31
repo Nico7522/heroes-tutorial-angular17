@@ -1,0 +1,9 @@
+<form [formGroup]="heroForm">
+    <div>
+        <label for="name">Hero name</label>
+        <input type="text" formControlName="name">
+        <div [hidden]="heroForm.get('name')?.hasError('required') && heroForm.get('name')?.untouched || (!heroForm.get('name')?.hasError('required'))"
+        class="alert-message">  Name is required
+       </div>
+    </div>
+</form>
